@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificação de Agendamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ddd;
+            text-align: center;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .logo {
+            width: 150px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://drive.google.com/thumbnail?id=1jU6WtxBIhmT6-pmralVFOfYqIKCfKrbj&sz=w1000" alt="Agendaqui" class="logo">
+        <div class="header">
+            Notificação de Agendamento
+        </div>
+        <div class="content">
+            <p>Olá, <strong>$nome_usuario</strong>!</p>
+            <p>Seu agendamento para o serviço <strong>$nome_servico</strong> foi <strong>$status_agendamento</strong>.</p>
+            <p>Data e Hora: <strong>$data_horario</strong></p>
+            <p>Prestador: <strong>$nome_prestador</strong></p>
+            <a href="http://localhost:3000/dashboard" class="button">Ver no sistema</a>
+        </div>
+        <div class="footer">
+            <p>Agendaqui - Plataforma de Agendamentos</p>
+        </div>
+    </div>
+</body>
+</html>
